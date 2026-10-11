@@ -1,7 +1,7 @@
 {
   "id": "shortcut-capture-sandbox",
   "name": "단축키 입력",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "1.8.7",
   "description": "누른 키 조합을 원래 텍스트 위치에 인라인 코드로 입력합니다.",
   "author": "tlatndms2-droid",

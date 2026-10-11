@@ -208,7 +208,9 @@ export default class ShortcutCapturePlugin extends Plugin {
         if (e.key === 'ArrowRight') choice = 'insert';
         render(); return;
       }
-      if (choice && !modified && e.key === 'Enter') { choice === 'cancel' ? close() : commit(); return; }
+      // Bare Enter confirms the captured shortcut, even without button selection.
+      // Modified Enter remains a capturable shortcut.
+      if (!modified && (e.key === 'Enter' || e.code === 'Enter' || e.code === 'NumpadEnter')) { commit(); return; }
       if (choice) { choice = null; capture.release(); capture.maximum = []; }
       capture.down(e); render();
     };
