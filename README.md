@@ -8,7 +8,7 @@ Windows 데스크톱 Obsidian에서 누른 키 조합을 원래 텍스트 위치
 
 1. Obsidian의 커뮤니티 플러그인에서 **BRAT**을 설치하고 활성화합니다.
 2. BRAT 설정에서 **Add beta plugin**을 선택합니다.
-3. `tlatndms2-droid/obsidian-shortcut-capture`를 입력하고 추가합니다.
+3. `tlatndms2-droid/obsidian-shortcut-capture`를 입력하고 **Latest version**을 선택한 뒤 **Add plugin**을 누릅니다.
 4. 커뮤니티 플러그인 목록에서 **단축키 입력**이 활성화됐는지 확인합니다.
 
 [최신 Release](https://github.com/tlatndms2-droid/obsidian-shortcut-capture/releases/latest)의 `main.js`, `manifest.json`, `styles.css`를 Vault의 `.obsidian/plugins/shortcut-capture-sandbox/`에 넣어 수동 설치할 수도 있습니다. 내부 ID는 기존 Sandbox 설치와의 호환을 위해 유지합니다.
