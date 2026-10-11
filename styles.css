@@ -1,0 +1,20 @@
+.shortcut-capture-popup {
+  position: fixed; z-index: 10000; display: flex; align-items: center; gap: 10px;
+  width: max-content; min-width: 230px; max-width: calc(100vw - 16px);
+  height: 38px; padding: 5px 9px 5px 12px; box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--text-muted) 35%, transparent);
+  border-radius: 7px; background: color-mix(in srgb, var(--background-secondary) 80%, transparent);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%); color: var(--text-normal);
+  outline: none;
+}
+.shortcut-capture-value { font-family: var(--font-monospace); font-size: 13px; white-space: nowrap; flex: 1; min-width: 68px; overflow-x: auto; }
+.shortcut-capture-value.is-empty { color: var(--text-muted); font-family: var(--font-interface); }
+.shortcut-capture-popup button {
+  flex: none; height: 26px; min-width: 30px; padding: 2px 5px; margin: 0;
+  background: transparent; box-shadow: none; border: 1px solid transparent; border-radius: 4px;
+  color: var(--text-muted); font-size: 12px; font-weight: normal; cursor: pointer;
+}
+.shortcut-capture-popup .shortcut-capture-insert { color: var(--text-accent); }
+.shortcut-capture-popup .shortcut-capture-close { min-width: 20px; font-size: 18px; padding: 0 2px; }
+.shortcut-capture-popup button:hover, .shortcut-capture-popup button.is-selected { background: color-mix(in srgb, var(--interactive-accent) 13%, transparent); border-color: var(--interactive-accent); }
+.shortcut-capture-popup button:disabled { opacity: .35; cursor: default; border-color: transparent; background: transparent; }

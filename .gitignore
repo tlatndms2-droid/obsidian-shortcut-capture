@@ -1,0 +1,8 @@
+node_modules/
+main.js
+validation/
+planning/
+*.zip
+HANDOFF.md
+scripts/runtime-validation.cjs
+
